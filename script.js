@@ -83,7 +83,7 @@ function updateUI() {
     
     // Run the TwoSum Algorithm and let the user know what happened
     if (myArray.length < 2) {
-        resultElement.textContent = "Need at least 2 numbers to run TwoSum! C'mon now.";
+        resultElement.textContent = "Need at least 2 numbers to run TwoSum!";
     } else {
         const result = twoSum(myArray, targetValue);
         
