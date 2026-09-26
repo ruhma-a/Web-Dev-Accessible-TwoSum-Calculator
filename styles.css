@@ -1,0 +1,124 @@
+/* The best color (purple) needs a pretty font, ofc */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fcfaff; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purple-marquee {
+    background-color: #e9d5ff;
+    color: #5b21b6;
+    font-weight: 600;
+    padding: 12px;
+    width: 100%;
+    display: block;
+}
+
+/* Hopefully this max-width keeps it mobile accessible since WE all have an attachment to our phones */
+main {
+    max-width: 600px;
+    width: 90%; 
+    margin: 30px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #4c1d95;
+    font-size: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.15); 
+    margin-top: 20px;
+}
+
+.controls {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Pls don't overflow on iPhones. Another reason to choose Android*/
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #d8b4fe;
+    border-radius: 6px;
+    outline: none;
+    font-family: inherit;
+}
+
+input:focus {
+    border-color: #7e22ce;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #7c3aed;
+}
+
+.btn-secondary {
+    background-color: #c4b5fd;
+    color: #4c1d95;
+}
+
+.btn-secondary:hover {
+    background-color: #a78bfa;
+}
+
+.array-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    min-height: 40px;
+    margin-top: 10px;
+}
+
+.array-box {
+    background-color: #ede9fe;
+    color: #5b21b6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid #c4b5fd;
+    animation: popIn 0.2s ease-out; /* Little CSS magic for the dopamine */
+}
+
+.results {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f3e8ff;
+    border-radius: 8px;
+    border-left: 5px solid #8b5cf6;
+}
+
+#resultText {
+    font-weight: 600;
+    color: #4c1d95;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}

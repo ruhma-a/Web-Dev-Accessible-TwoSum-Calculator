@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Sum Visualizer | Array Shenanigans</title>
+    <!-- Linking the styles (lets hope it doesn't break today) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Learned "marquee" so ofc now I have to overuse it -->
+        <marquee scrollamount="8" class="purple-marquee">Behold: An interactive algorithm that doesn't use complex nested loops!</marquee>
+    </header>
+
+    <main>
+        <h1>Keep clicking at the cost of your marbles. Get it because the marbles are numbers. haha...</h1>
+        <p>A little interactive site to prove Hash Maps are basically magical.</p>
+
+        <div class="card">
+            <!-- Where the user messes with my beautiful array -->
+            <div class="controls">
+                <input type="number" id="numInput" placeholder="Enter a number">
+                <button onclick="pushToArray()">Push</button>
+                <button class="btn-secondary" onclick="popFromArray()">Pop</button>
+            </div>
+
+            <!-- The magic number we're hunting -->
+            <div class="controls">
+                <label for="targetInput">Target Value:</label>
+                <input type="number" id="targetInput" value="0" onchange="updateTarget()">
+            </div>
+            
+            <!-- Array reveal when?! -->
+            <div class="visualizer">
+                <h3>Current Array:</h3>
+                <div id="arrayDisplay" class="array-container">
+                    <span class="empty-state">[ Array is empty. Feed it numbers. ]</span>
+                </div>
+            </div>
+
+            <!-- Did it work? Let's find out -->
+            <div class="results">
+                <h3>TwoSum Result:</h3>
+                <p id="resultText">Add some numbers to begin!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link to the actual thing making this work -->
+    <script src="script.js"></script>
+</body>
+</html>
