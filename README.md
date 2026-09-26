@@ -16,7 +16,7 @@ Don't want to download files and run them locally? Same.
 This project follows best programming practices by separating components into three files:
 1. `index.html` - The structure and navigation.
 2. `styles.css` - The responsive, flexbox-driven, accessible styling.
-3. `script.js` - The brains of the operation (state management, DOM manipulation, and the algorithm).
+3. `script.js` - The thing actually making the app work (state management, DOM manipulation, and the algorithm).
 
 ## Algorithm
 Instead of a brute force nested method, which would render an O(n^2) complexity, this project uses hash maps. This allows the algorithm to find the correct indices in O(n) complexity. Yay!
