@@ -2,6 +2,10 @@
 
 This project is a fully interactive, mobile-responsive web application designed to visually demonstrate the classic **Two Sum** algorithm.
 
+## 🌐 Live Demo
+Don't want to download files and run them locally? Same.
+[Play with the live app here!](https://ruhma-a.github.io/Web-Dev-Accessible-TwoSum-Calculator/)
+
 ## ✨ Features
 - **Interactive Array Management:** Push new numbers (marbles) into the array or pop them off the end using the DOM controls.
 - **Dynamic Target Tracking:** Set a target value and watch the algorithm react in real-time as the inputs change.
